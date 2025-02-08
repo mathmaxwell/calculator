@@ -1,8 +1,8 @@
-let text = prompt('sozlar yozing, vergul bilan')
+let text = prompt('kotta harf qilib beradi')
 
-function reverseWord(str) {
+function capitalize(str) {
 	let arr = str.split(' ')
-	let newArr = arr.reverse()
+	let newArr = arr.map(word => word[0].toUpperCase() + word.slice(1))
 	return newArr.join(' ')
 }
-console.log(reverseWord(text))
+console.log(capitalize(text))
