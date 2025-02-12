@@ -146,3 +146,9 @@ equals.addEventListener('click', function () {
 	display.value = eval(`${firstNumber}${operation}${lastNumber}`)
 	firstNumber = display.value
 })
+clear.addEventListener('click', function () {
+	display.value = '';
+	firstNumber = ''
+	lastNumber = '';
+	operation = undefined
+})
